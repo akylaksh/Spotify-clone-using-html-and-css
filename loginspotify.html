@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Spotify </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+        }
+        .logo-main{border: 1px solid gray;
+           height: 80px;
+           margin-top: 5px;
+           margin-bottom: 30px;
+            width: 100%;
+        }
+        .logo-main img{
+            width: 200px;
+            margin-top: -23px;
+            
+            margin-left: 650px;
+            background: transparent;
+            
+            position: absolute;
+            z-index: -1;
+        }
+.par p{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+
+.button{
+margin: 10px 0;
+    justify-content: center;
+    display: grid;
+    grid-gap: 8px;
+
+    
+}
+.button button{
+    text-align: center;
+    border: none;
+    padding: 15px;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    color: rgb(248, 248,248);
+    border-radius: 25px;
+    height: 35px;
+    word-spacing: 2px;
+    width: 450px;
+    background-color: rgb(24, 119, 242 );
+    padding: 0 25px 0 25px;
+}
+
+.button button span{
+    margin-left: 10px;
+}
+.button button i{
+    font-size: 1.2rem;
+
+}
+#go{
+    color: green;
+}
+body{
+    overflow-x: hidden;
+}
+
+ #apple{
+    background-color: rgba(0,0,0,0.9);
+ }
+#phone{
+    background-color: transparent;
+    color: gray;
+    border: 1px solid gray;
+}
+#google{
+    background-color: transparent;
+    color: gray;
+    
+    border: 1px solid gray;
+}
+.hori{
+    width: 100%;
+    margin-bottom: 25px;
+    font-weight: bold;
+    position: relative;
+}
+.hori p{
+    margin-top: 15px;
+text-align: center;
+
+}
+
+.hori hr {
+    width: 40%;
+    position: absolute;
+    margin-left: 18px;
+    margin-top: 10px;
+
+} #hr{
+position: absolute;
+width: 100%;
+font-weight: bolder;
+margin-top: -18px;
+margin-left: 250px;
+}
+.inputfield{
+    display: grid;
+    margin-top: 12px;
+    justify-content: center;
+}
+.inputfield #email{
+    font-size:.8rem;
+border: 1px solid grey;
+border-radius: 4px;
+border-width: 2px;
+    padding: 10px 10px;
+    width: 450px;
+    margin-top: 5px;
+    
+}
+div label{
+    font-size: 0.8rem;
+    
+    
+}
+
+#pass{
+    display: flex;
+    justify-content: center;
+    margin-left: -319px;
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    }
+    #pass a{
+        color: black;
+    }
+    .chek{
+
+        display: flex;
+        justify-content: center;
+    }
+#box{
+    margin-right: 10px;
+    
+    accent-color: rgb(5, 251, 5);
+}
+.chek span{
+    margin-right:250px ;
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: 500px;
+    font-weight: lighter;
+margin-top: 20px;
+}
+.mainsection{
+
+    width: 460px;
+    
+    margin: 10px auto;
+    box-sizing: border-box; 
+}
+
+
+#logb{
+    font-size: 0.9rem;
+    border-radius: 20px;
+    width: 100px;
+    padding: 10px;
+    line-height:25px;
+    word-spacing: 2px;
+    margin-top: 10px;
+    font-weight: bold;
+    border: none;
+
+    background-color: rgb(4, 254, 4);
+}
+.hr5{
+    width: calc(100%-500px);
+
+    color: #eeacac1b;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+    
+}
+  .account{
+    display: grid;
+    justify-content: center;
+  } 
+  .account span{
+    font-weight: bold;
+
+    text-align: center;
+    word-spacing: 1px;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+
+  } 
+  .account button{
+    width: 400px;
+    height: 35px;
+    
+    text-align: center;
+    border-radius: 30px;
+    background: transparent;
+    font-weight: bold;
+    color: gray;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+  }
+  .date{
+    width: 45%;
+  }
+
+    </style>
+</head>
+<body>
+<div class="con-main">
+
+
+    <div class="logo-main">
+        <img src="/th.jpeg" alt="">
+    </div>
+    <div class="mainsection">
+    <div class="par"><p>To continue,log into Spotify.</p></div>
+
+    <div class="button">
+<a href="#"><button type="button"><i class="fa-brands fa-facebook"></i><span>CONTINUE WITH FACEBOOK</span></button></a>
+<a href="#"><button id="google"><i id="go" class="fa-brands fa-google"></i><span >CONTINUE WITH GOOGLE</span></button></a>
+<a href=""><button id="apple" type="button"><i class="fa-brands fa-apple"></i><span>CONTINUE WITH APPLE</span></button></a>
+<button id="phone" type="button">CONTINUE WITH PHONE NUMBER</button>
+    </div>
+    <div class="hori"><hr>
+        <p>OR</p> 
+        <div id="hr">
+            <hr>
+        </div>
+
+        <div class="inputfield">
+            <div><label for="">Email address or Username</label></div>
+            <input type="email" name="" id="email" placeholder="Email address or Username">
+
+            <div><label for="">Password</label></div>
+            <input type="Password" name="" id="email" placeholder="Password">
+
+        </div>
+    <div id="pass"><a href="#">Forgot your password?</a></div>
+
+    <div class="chek"><input type="checkbox" checked name="" id="box"><span>Remember me</span>
+    <button id="logb" type="button">Log In</button></div>
+
+
+</div> 
+
+<div class="hr5"><hr></div>
+
+
+<div class="account">
+    <span>Don't have an account?</span>
+    <button type="button">SIGN UP FOR SPOTIFY</button>
+</div>
+</div>
+
+</body>
+</html>
